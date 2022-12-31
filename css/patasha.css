@@ -1,0 +1,13 @@
+.task2{
+    width: 100px;
+    height: 100px;
+    border-width: 5px;
+    border-color: black;
+    border-style: double;
+    background: blue;
+}
+.task2:hover{
+    box-shadow: 30px 19px 10px cadetblue;
+    background-color: bisque;    
+}
+

@@ -1,0 +1,10 @@
+<div class="datetime" id="1"></div>
+
+<script>
+    el = document.getElementById("1");
+    setInterval(()=>{
+        a = Date(Date.now());
+        el.innerText=`${a.toString()}`;
+    }, 1000)
+ 
+</script>

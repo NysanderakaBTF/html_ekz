@@ -1,16 +1,43 @@
 <h4>Task 5</h4>
-
-
+<button class="b" id="b" onclick="func()">Menu</button>
+<ul id="2">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
 
 <style>
-.task5{
-    position: relative;
+.b{
     width: 100px;
-    height: 100px;
-    background-color: aquamarine;
-    transition: all 1s;
+    height: 30px;
 }
-.task4:hover{
-    opacity: 0;
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 200px;
+    display: none;
+}
+li{
+    display: block;
+    border: 4px black dotted;
 }
 </style>
+
+<script>
+b = document.getElementById("b");
+ls = document.getElementById("2");
+a = 0;
+function func(){
+    if(a==0){
+        ls.style.display = 'block';
+        a=1;
+    }else{
+        ls.style.display = 'none';
+        a=0;
+    }
+}
+</script>

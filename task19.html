@@ -1,0 +1,28 @@
+<div id="but"></div>
+<button onclick="f()">alla</button>
+
+<style>
+    #but{
+        width: 100px;
+        height: 100px;
+        background: green;
+        transition: all 1s;
+        opacity: 1;
+    }
+</style>
+
+<script>
+el = document.getElementById('but');
+
+function f(){
+    console.log(el.style);
+    setInterval(()=>{
+         if(el.style.opacity=='0'){
+            el.style.opacity='1';
+        }else{
+            el.style.opacity='0';
+        }
+    },2000);
+   
+}
+</script>

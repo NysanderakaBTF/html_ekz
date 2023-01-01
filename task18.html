@@ -1,0 +1,28 @@
+<img id="alla" src="https://i.redd.it/z118icwmo5741.jpg" onclick="f()">
+
+<style>
+    #alla{
+        width: 100px;
+        height: 100px;
+        transition: all 4s;
+    }
+</style>
+
+<script>
+    im = document.getElementById('alla');
+    let a = 0;
+    function f(){
+        setInterval(()=>{
+            
+            if(a==0){
+            im.style.width = '1000px';
+            im.style.height = '1000px';
+            a=1;
+            }else{
+                im.style.width = '100px';
+            im.style.height = '100px';
+            a=0;
+            }
+        },4000);
+    }
+</script>

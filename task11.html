@@ -11,14 +11,8 @@
 
 <style>
   #head{
-    visibility: visible;
+    position: absolute;
+    top: 0;
+    bottom: 100%;
   }
 </style>
-<script>
-  let el = document.getElementById('head');
-  setInterval(()=>{if ('visible' === el.style.visibility){
-    el.style.visibility='hidden';
-  }else{
-    el.style.visibility='visible';
-  }}, 100);
-</script>

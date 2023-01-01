@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<p id="alla">
+    pojoijj
+</p>
+<button onclick="plus()">+</button>
+<button onclick="minus()">-</button>
+
+<script>
+    p = document.getElementById('alla');
+    fontss = ['xxx-small', 'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large', 'xxx-large']
+    a = 5;
+    function plus() {
+        p.style.fontSize =fontss[a++];
+    }
+
+    function minus() {
+        p.style.fontSize =fontss[a--];
+    }
+</script>

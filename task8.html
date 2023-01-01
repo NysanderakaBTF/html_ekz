@@ -1,22 +1,59 @@
 <form>
-    <label for="white">white</label>
+    <label for="1">white</label>
     <input type="checkbox" name="white" id="1">
 
-    <label for="green">green</label>
+    <label for="2">green</label>
     <input type="checkbox" name="green" id="2">
 
-    <label for="red">red</label>
+    <label for="3">red</label>
     <input type="checkbox" name="red" id="3">
 
-    <label for="grey">grey</label>
+    <label for="4">grey</label>
     <input type="checkbox" name="grey" id="4">
 
-    <label for="orange">orange</label>
+    <label for="5">orange</label>
     <input type="checkbox" name="orange" id="5">
-
-    <label for="blue">blue</label>
-    <input type="checkbox" name="blue" id="6">
 </form>
+
+<script>
+    bod = document.body
+    document.getElementById('1').addEventListener('change', (ev)=>{
+        if(document.getElementById('1').checked){
+            bod.style.backgroundColor='white';
+        }else{
+            bod.style.backgroundColor='white';
+        }
+    })
+    document.getElementById('2').addEventListener('change', (ev)=>{
+        if(document.getElementById('2').checked){
+            bod.style.backgroundColor='green';
+        }else{
+            bod.style.backgroundColor='white';
+        }
+    })
+    document.getElementById('3').addEventListener('change', (ev)=>{
+        if(document.getElementById('3').checked){
+            bod.style.backgroundColor='red';
+        }else{
+            bod.style.backgroundColor='white';
+        }
+    })
+    document.getElementById('4').addEventListener('change', (ev)=>{
+        if(document.getElementById('4').checked){
+            bod.style.backgroundColor='grey';
+        }else{
+            bod.style.backgroundColor='white';
+        }
+    })
+    document.getElementById('5').addEventListener('change', (ev)=>{
+        if(document.getElementById('5').checked){
+            bod.style.backgroundColor='orange';
+        }else{
+            bod.style.backgroundColor='white';
+        }
+    })
+</script>
+
 
 <style>
     #1:checked{

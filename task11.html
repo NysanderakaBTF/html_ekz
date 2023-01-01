@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<div id="head">
+  <ul id="1">
+    <li>aaa</li>
+    <li>aaa</li>
+    <li>aaa</li>
+    <li>aaa</li>
+    <li>aaa</li>
+    <li>aaa</li>
+  </ul>
+</div>
+
+<style>
+  #head{
+    visibility: visible;
+  }
+</style>
+<script>
+  let el = document.getElementById('head');
+  setInterval(()=>{if ('visible' === el.style.visibility){
+    el.style.visibility='hidden';
+  }else{
+    el.style.visibility='visible';
+  }}, 100);
+</script>

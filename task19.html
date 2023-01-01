@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="s">смена</button>
+    <div class="lightn"></div>
+</body>
+</html>
+
+<style>
+    .lightn {
+        width: 200px;
+        height: 200px;
+        background: red;
+    }
+</style>
+
+<script>
+    document.getElementById("s").addEventListener("click", () => {
+        if (document.getElementsByClassName("lightn")[0].style.visibility != "hidden"){
+            document.getElementsByClassName("lightn")[0].style.visibility = "hidden";
+        }else{
+            document.getElementsByClassName("lightn")[0].style.visibility = "visible";
+
+        }
+    })
+</script>
